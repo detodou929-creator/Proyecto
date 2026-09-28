@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Actividad 2.2</title>
+</head>
+
+<body>
+
+    <h1>Encuesta de visita a la Universidad</h1>
+
+    <p>
+        Por favor complete el siguiente formulario para conocer su opinión
+        sobre su visita al campus.
+    </p>
+
+    <form action="respuesta.html" method="post">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <br><br>
+
+        <!-- Correo electrónico -->
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo">
+
+        <br><br>
+
+        <p>¿Qué fue lo que más te gustó del campus?</p>
+
+        <input type="checkbox" id="campus" name="gustos" value="campus">
+        <label for="campus">Campus</label>
+
+        <br>
+
+        <input type="checkbox" id="estudiantes" name="gustos" value="estudiantes">
+        <label for="estudiantes">Estudiantes</label>
+
+        <br>
+
+        <input type="checkbox" id="ubicacion" name="gustos" value="ubicacion">
+        <label for="ubicacion">Ubicación</label>
+
+        <br>
+
+        <input type="checkbox" id="ambiente" name="gustos" value="ambiente">
+        <label for="ambiente">Ambiente</label>
+
+        <br>
+
+        <input type="checkbox" id="dormitorios" name="gustos" value="dormitorios">
+        <label for="dormitorios">Dormitorios</label>
+
+        <br>
+
+        <input type="checkbox" id="deportes" name="gustos" value="deportes">
+        <label for="deportes">Deportes</label>
+
+        <br><br>
+
+
+        <!-- Botones de opción -->
+        <p>¿Cómo supiste de la universidad?</p>
+
+        <input type="radio" id="amigos" name="medio" value="amigos">
+        <label for="amigos">Amigos</label>
+
+        <br>
+
+        <input type="radio" id="television" name="medio" value="television">
+        <label for="television">Televisión</label>
+
+        <br>
+
+        <input type="radio" id="internet" name="medio" value="internet">
+        <label for="internet">Internet</label>
+
+        <br>
+
+        <input type="radio" id="otro" name="medio" value="otro">
+        <label for="otro">Otro</label>
+
+        <br><br>
+
+
+        <!-- Área de comentarios -->
+        <label for="comentarios">Comentarios adicionales:</label>
+
+        <br>
+
+        <textarea id="comentarios"
+                  name="comentarios"
+                  rows="5"
+                  cols="40"></textarea>
+
+        <br><br>
+
+
+        <!-- Botones -->
+        <input type="submit" value="Enviar">
+
+        <input type="reset" value="Restablecer">
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio HTML5</title>
+</head>
+
+<body>
+
+    <h1>Ejercicio 2.2 - Elementos HTML5</h1>
+
+    <!-- a) Elemento meter -->
+    <h2>a) Calificación de la cafetería</h2>
+
+    <p>
+        1
+        <meter min="1" max="10" value="7"></meter>
+        10
+    </p>
+
+    <!-- b) Elemento details y summary -->
+    <h2>b) Resultados de la encuesta</h2>
+
+    <details>
+        <summary>Resultados de la encuesta</summary>
+
+        <p>
+            Se realizó una encuesta a los estudiantes para conocer su opinión
+            sobre los alimentos de la cafetería. El resultado promedio fue
+            de 7 de 10.
+        </p>
+    </details>
+
+    <!-- c) Input con autofocus -->
+    <h2>c) Primer nombre con enfoque automático</h2>
+
+    <input type="text" name="nombre" autofocus>
+
+    <!-- d) Input con placeholder -->
+    <h2>d) Primer nombre con placeholder</h2>
+
+    <input type="text" name="nombre" placeholder="Primer nombre">
+
+    <!-- e) Datalist -->
+    <h2>e) Lista de estados</h2>
+
+    <input type="text" list="estados" placeholder="Escriba un estado">
+
+    <datalist id="estados">
+        <option value="Puebla">
+        <option value="Oaxaca">
+        <option value="Veracruz">
+        <option value="Tlaxcala">
+        <option value="Morelos">
+    </datalist>
+
+    <!-- f) Input range -->
+    <h2>f) Seleccione un número</h2>
+
+    <input type="range" min="1" max="100">
+
+    <!-- g) Formulario sin autocomplete -->
+    <h2>g) Formulario sin autocomplete</h2>
+
+    <form autocomplete="off">
+
+    <!-- h) Elemento mark -->
+    <h2>h) Texto resaltado</h2>
+
+    <p>
+        Se pidió a los estudiantes que calificaran los elementos en la
+        cafetería en una escala del 1 al 10.
+        <mark>El resultado promedio fue 7.</mark>
+    </p>
+
+</body>
+</html>

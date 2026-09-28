@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de registro</title>
+</head>
+
+<body>
+
+    <h1>Formulario de registro</h1>
+
+    <p>Complete los siguientes datos para registrarse.</p>
+
+    <form action="registro.html" method="post">
+
+        <p>
+            <label for="nombre">Primer nombre:</label>
+            <input type="text" id="nombre" name="nombre"
+                   placeholder="Escriba su nombre"
+                   required autofocus>
+        </p>
+
+        <p>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido"
+                   placeholder="Escriba su apellido"
+                   required>
+        </p>
+
+        <p>
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo"
+                   placeholder="ejemplo@correo.com"
+                   required>
+        </p>
+
+        <details>
+            <summary>Encuesta opcional</summary>
+
+            <p>
+                ¿En qué año se encuentra actualmente en la universidad?
+            </p>
+
+            <p>
+                <label for="anio">Año universitario:</label>
+
+                <select id="anio" name="anio">
+                    <option value="">Seleccione una opción</option>
+                    <option value="primero">Primer año</option>
+                    <option value="segundo">Segundo año</option>
+                    <option value="tercero">Tercer año</option>
+                    <option value="cuarto">Cuarto año</option>
+                    <option value="quinto">Quinto año</option>
+                </select>
+            </p>
+
+        </details>
+
+        <p>
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" id="fecha" name="fecha">
+        </p>
+
+        <p>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono"
+                   placeholder="10 dígitos">
+        </p>
+
+        <p>
+            <label for="sitio">Sitio web:</label>
+            <input type="url" id="sitio" name="sitio"
+                   placeholder="https://ejemplo.com">
+        </p>
+
+        <p>
+            <label for="semestre">Semestre:</label>
+            <input type="number" id="semestre" name="semestre"
+                   min="1" max="12">
+        </p>
+
+        <p>
+            <label for="satisfaccion">
+                Nivel de satisfacción:
+            </label>
+
+            <input type="range" id="satisfaccion"
+                   name="satisfaccion"
+                   min="1" max="10" value="5">
+        </p>
+
+        <p>
+            <label for="color">Color favorito:</label>
+            <input type="color" id="color" name="color">
+        </p>
+
+        <p>
+            <label for="comentarios">Comentarios:</label>
+        </p>
+
+        <textarea id="comentarios" name="comentarios"
+                  rows="5" cols="40"
+                  placeholder="Escriba sus comentarios"></textarea>
+
+        <p>
+            <input type="checkbox" id="terminos" name="terminos" required>
+            <label for="terminos">
+                Acepto los términos y condiciones.
+            </label>
+        </p>
+
+        <p>
+            <input type="submit" value="Registrarse">
+            <input type="reset" value="Restablecer">
+        </p>
+
+    </form>
+
+</body>
+</html>
